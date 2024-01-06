@@ -7,6 +7,7 @@
     font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
 }
+
 html::-webkit-scrollbar-track{
     background: transparent;
 }
@@ -99,17 +100,21 @@ html::-webkit-scrollbar{
     color: #e53937;
 }
 #home-btn{
-    padding: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #e53937;
     text-decoration: none;
-    background: #e53937;
-    color: white;
-    border-radius: 5px;
+    background: transparent;
+    color: #e53937;
+    animation: forwards;
+    transition: 0.5s;
 }
 @media screen and (max-width:873px){
     .home .img img{
         margin-left: 0px;
     }
 }
+
 
 /* Home Section End */
 
@@ -236,6 +241,10 @@ html::-webkit-scrollbar{
     color: white;
     border: 2px solid white;
 }
+a {
+    color: #e53937;
+    text-decoration: underline;
+}
 /* Order Section End */
 
 
@@ -336,14 +345,14 @@ width: 300px;
 
 .footer .btn.btn-social {
     margin-right: 5px;
-    width: 35px;
+    width: 50px;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--light);
     border: 1px solid #FFFFFF;
-    border-radius: 35px;
+    border-radius: 100px;
     transition: .3s;
 }
 
@@ -400,5 +409,8 @@ width: 300px;
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+btn btn-outline-light btn-social {
+    border-radius: 100%;
 }
 /* Footer End */
